@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drill 1</title>
+    <style>
+    body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial;
+            background-color: pink;
+
+            position:absolute ;
+            top: 39%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: catamaran;
+        }
+        .box{
+            padding: 5vh;
+            border-radius: 3vh;
+            border: 3px solid;
+            border-color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box" id="output"></div>
+
+<script>
+    // String
+    let add = "Addition ";
+    let sub = "Subtraction ";
+    let mul = "Multiplication";
+    let div = "Divison";
+
+    // Factors
+    let num1 = 60 ;
+    let num2 = 7 ;
+    let factor1 = 69 ;
+    let factor2 = 2 ;
+    let value1 = 67 ;
+    let value2 = 1 ;
+    let var1 = 134 ;
+    let var2 = 2 ;
+
+    // Calculator
+    let sum = num1 + num2;
+    let diff = factor1 - factor2;
+    let prod = value1 * value2;
+    let quot = var1 / var2;
+    document.getElementById("output").innerHTML =
+       "<h2>Basic Calculator Display</h2>" + 
+       add + "<br>" +
+        num1 + " + " + num2 + " = " + sum + "<br>" +
+        sub + "<br>" +
+        factor1 + " - " + factor2 + " = " + diff + "<br>" +
+        mul + "<br>" +
+        value1 + " * " + value2 + " = " + prod + "<br>" +
+        div + "<br>" + var1 + " / " + var2 + " = " + quot + "<br>";
+</script>
+</body>
+</html>
